@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+find /home -name "error_log" -type f -delete
+
 for f in /home/*; do
     if [ -d "$f" ]; then
         # Will not run if no directories are available
